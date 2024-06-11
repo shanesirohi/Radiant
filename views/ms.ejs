@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Artists</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #333;
+        }
+
+        .form-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container input[type="text"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            width: 300px;
+        }
+
+        .form-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .artists-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .artist-card {
+            width: 200px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .artist-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .artist-card img {
+            width: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .artist-card p {
+            margin: 10px;
+            color: #333;
+        }
+
+        .submit-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .submit-button button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search any 5 of your favourite artists</h1>
+    <div class="form-container">
+        <form action="/ms" method="GET">
+            <input type="hidden" name="user" value="<%= userId %>">
+            <input type="text" name="search" placeholder="Search artists..." value="<%= searchQuery %>">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <form action="/ms" method="POST">
+        <input type="hidden" name="userId" value="<%= userId %>">
+        <div class="artists-container">
+            <% artists.forEach(artist => { %>
+                <div class="artist-card">
+                    <img src="<%= artist.imageUrl %>" alt="<%= artist.name %>">
+                    <p><%= artist.name %></p>
+                    <input type="checkbox" name="selectedArtists" value='<%= JSON.stringify(artist) %>'>
+                </div>
+            <% }) %>
+        </div>
+        <div class="submit-button">
+            <button type="submit">Proceed</button>
+        </div>
+    </form>
+</body>
+</html>

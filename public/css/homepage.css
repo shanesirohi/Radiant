@@ -1,0 +1,140 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-blue-900 {
+    background-color: #3498db;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.hover:text-gray-200:hover {
+    color: #cccccc;
+}
+
+.h-screen {
+    height: 100vh;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.top-0 {
+    top: 0;
+}
+
+.left-0 {
+    left: 0;
+}
+
+.w-64 {
+    width: 16rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.mt-4 {
+    margin-top: 4px;
+}
+
+.mb-4 {
+    margin-bottom: 4px;
+}
+
+.p-3 {
+    padding: 3px;
+}
+
+.p-4 {
+    padding: 4px;
+}
+
+.ml-64 {
+    margin-left: 16rem;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.mx-4 {
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.md:w-1/2 {
+    width: 50%;
+}
+
+.xl:w-1/3 {
+    width: 33.33%;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.rounded {
+    border-radius: 0.25rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.text-gray-600 {
+    color: #666;
+}
+
+.py-2 {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.border-b {
+    border-bottom: 1px solid #ddd;
+}
+
+.border-gray-200 {
+    border-color: #ccc;
+}

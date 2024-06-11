@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicMatch - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">MusicMatch</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="/profile" class="hover:underline">Profile</a></li>
+                    <li><a href="/logout" class="hover:underline">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto mt-8">
+        <section id="user-info" class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-xl font-semibold">Hello, <%= user.username %>!</h2>
+            <p>School: <%= user.college %></p>
+            <p>Favorite Music Genre: <%= user.musicGenre %></p>
+        </section>
+        <section id="feed" class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-xl font-semibold mb-4">Feed</h2>
+            <p>No posts to display yet.</p>
+        </section>
+        <section id="chat" class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">Chat</h2>
+            <div id="chat-messages" class="mb-4 h-64 overflow-y-scroll bg-gray-50 p-4 rounded-lg">
+                <p>No messages yet.</p>
+            </div>
+            <form id="chat-form" class="flex">
+                <input type="text" id="chat-input" class="flex-grow p-2 border border-gray-300 rounded-l-lg" placeholder="Type a message...">
+                <button type="submit" class="bg-blue-600 text-white p-2 rounded-r-lg">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 MusicMatch. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

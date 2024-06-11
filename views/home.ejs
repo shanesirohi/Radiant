@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml"
+        href="https://lh3.googleusercontent.com/fife/ALs6j_E18TxhkA4zYpqMEtXxK1Ti4MAMv7VkTqqR54BYV5QuyNPSrm70rVDquDUVXS4J6yRJBIdncxWZoxy2x7IPr-pESypSG78kHJUQs_QUXbLy1UOofuMUNriSDfrFb1EpHkFpkvjeR8-DntQAPkPzyphb2vIprdpgAzowmV9D2-SExhhu4h0k-3zXiY1mUaKr6ZvBhUp-EfhgTEVViEbF45sGFg9ahtbqf4s-pU-a-2kywJK9oTyP5GHq66AQT2wvUtUixA4-2Wt9vauOnOWcDW9m7yNmD9sIlkFT56c-wEAe_Nlbc9LkRxSo2NWbQXNokZdDkBzp-KwrpKHCMs5-79E79kBDrF23ng-8SExi7nZnV2ulfPI_wxO01rrZSUsgDnY_vy53fXrU-4jOM9ceGx9edsebz2FGWot3Jx-TpKfaS16efPPhIWHAneYKx2sj807ve04gYd6m9_0gl2tY-gPkhg4p3m5raVrEsnmKIl2_UaBEqIav1n8hV49f-VoHDs6rRCWwyd7WW2uO2uLe1h0OcuIV_el8rLbuBeIih2V3N1D8Pg4gCAroBLI6cLAi9TESVQDl1OXfWzBmYmRViv3jiV8bAo9PyGCgHE3byvPPPYh1bZ-gg4ky02Cqa_Ihy7DXQ5zqd-AYLTo6-FN0ZwkiL70THCS9jPHeCKekFGC0pcyXkMI4vruJrsES4enFZ29f0EaCS6MC6QzRikv6Ucqp9CzjdLxc8YTG7VgRGz_IMx7wkCvUPjNgdNVKyuJtOx8sAOWJTKQk2jSwVzbvBSRaUrq6wevXWP_7rQALICvVv9lMPQ2Lq4XnzFR2RVsD6tHXqtmBoYcoukGVKxhGU1Zx-vch8Gtjq_ZtdYeT2OQ52IHUTukemxij3rp2AcwnuFFP3V2K5HOEvtT_WT4k8cSv27lb-BpVu3dciFoYnfEVropWryPZxnvDT_8XxT-3EYgk2cA183mpSjjsV22io0ldySpOiPJBNSVRBytEFwOAyIMo8dFgQ_vUALhfrvl74uV093LTt5-m6KBfPg6mqmEws7HiFTtkp5aeRd4Ok8dCkKVVeiYSGZSHSN5cbeUscmPU94XOT-AaMPzxg-O92--YVhFg7NV9H-J_hNs_pkGcl6nuxcJTB1fOYHUWNC_rHP_GcjH6wQ8-bT_PKQ0OaAr-y83HPQ7afA1mVfl7rvcnZ17PDi-MXxu4PSWZvHS-9uWmYHFu1frmijAS9zwX48WvKUj5mVKDx-pn=w2880-h1324" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radiant - Meet. Discover. Share.</title>
+    <meta name="description" content="Modern multi purpose agency template" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://radiant.onrender.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Radiant" />
+    <meta property="og:description" content="Meet People. Discover Music. Share Music." />
+    <meta property="og:image"
+        content="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYQQS_PUWyj2QUHNvINUot4Dry7_QJ6KQDHz4uZ8g_1lWCbFB-oVLISkbMmDPLwpjZ7iRP4STB26jDr0PJ_SQwLwDPJcHzcdko=w2880-h1324" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="radiant.com" />
+    <meta property="twitter:url" content="https://radiant.onrender.com" />
+    <meta name="twitter:title" content="RADIANT" />
+    <meta name="twitter:description" content="Meet People. Discover Music. Share Music." />
+    <meta name="twitter:image"
+        content="https://lh3.googleusercontent.com/fife/ALs6j_E18TxhkA4zYpqMEtXxK1Ti4MAMv7VkTqqR54BYV5QuyNPSrm70rVDquDUVXS4J6yRJBIdncxWZoxy2x7IPr-pESypSG78kHJUQs_QUXbLy1UOofuMUNriSDfrFb1EpHkFpkvjeR8-DntQAPkPzyphb2vIprdpgAzowmV9D2-SExhhu4h0k-3zXiY1mUaKr6ZvBhUp-EfhgTEVViEbF45sGFg9ahtbqf4s-pU-a-2kywJK9oTyP5GHq66AQT2wvUtUixA4-2Wt9vauOnOWcDW9m7yNmD9sIlkFT56c-wEAe_Nlbc9LkRxSo2NWbQXNokZdDkBzp-KwrpKHCMs5-79E79kBDrF23ng-8SExi7nZnV2ulfPI_wxO01rrZSUsgDnY_vy53fXrU-4jOM9ceGx9edsebz2FGWot3Jx-TpKfaS16efPPhIWHAneYKx2sj807ve04gYd6m9_0gl2tY-gPkhg4p3m5raVrEsnmKIl2_UaBEqIav1n8hV49f-VoHDs6rRCWwyd7WW2uO2uLe1h0OcuIV_el8rLbuBeIih2V3N1D8Pg4gCAroBLI6cLAi9TESVQDl1OXfWzBmYmRViv3jiV8bAo9PyGCgHE3byvPPPYh1bZ-gg4ky02Cqa_Ihy7DXQ5zqd-AYLTo6-FN0ZwkiL70THCS9jPHeCKekFGC0pcyXkMI4vruJrsES4enFZ29f0EaCS6MC6QzRikv6Ucqp9CzjdLxc8YTG7VgRGz_IMx7wkCvUPjNgdNVKyuJtOx8sAOWJTKQk2jSwVzbvBSRaUrq6wevXWP_7rQALICvVv9lMPQ2Lq4XnzFR2RVsD6tHXqtmBoYcoukGVKxhGU1Zx-vch8Gtjq_ZtdYeT2OQ52IHUTukemxij3rp2AcwnuFFP3V2K5HOEvtT_WT4k8cSv27lb-BpVu3dciFoYnfEVropWryPZxnvDT_8XxT-3EYgk2cA183mpSjjsV22io0ldySpOiPJBNSVRBytEFwOAyIMo8dFgQ_vUALhfrvl74uV093LTt5-m6KBfPg6mqmEws7HiFTtkp5aeRd4Ok8dCkKVVeiYSGZSHSN5cbeUscmPU94XOT-AaMPzxg-O92--YVhFg7NV9H-J_hNs_pkGcl6nuxcJTB1fOYHUWNC_rHP_GcjH6wQ8-bT_PKQ0OaAr-y83HPQ7afA1mVfl7rvcnZ17PDi-MXxu4PSWZvHS-9uWmYHFu1frmijAS9zwX48WvKUj5mVKDx-pn=w2880-h1324" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/assets/main-d8f71dd3.js"></script>
+    <link rel="stylesheet" href="/assets/main-792768bf.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black">
+    <header class="fixed top-0 z-20 w-full">
+        <nav class="2lg:px-12 mx-auto max-w-7xl px-6 py-12 lg:px-12 xl:px-6 2xl:px-0">
+            <div class="flex items-center justify-between">
+                <img src="/images/RADIANT.png" class="h-20 rounded-2xl">
+                <a href="/login"
+                    class="relative py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10">
+                    <span class="relative">Login</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="background relative">
+        <section id="home" class="relative flex min-h-screen items-center">
+            <div aria-hidden="true" class="absolute inset-0 z-[1] bg-gradient-to-b from-black/10 via-black/20 to-black">
+            </div>
+            <img src="/images/bgtest.jpg" class="fixed inset-0 h-full w-full object-cover" alt="woman in dark"
+                width="4160" height="6240" />
+            <div class="relative z-10 mx-auto max-w-7xl px-6 pb-40 pt-60 lg:px-12 xl:px-6 2xl:px-0">
+                <div class="pb-12 media-h:md:pb-32 media-h:lg:pb-12 xl:pb-12">
+                    <h1 data-rellax-speed="-3" data-rellax-xs-speed="0" data-rellax-mobile-speed="0"
+                        class="rellax text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight">Discover
+                        People</h1>
+                </div>
+                <div>
+                    <div class="ml-auto md:w-2/3 md:pt-12 lg:w-1/2">
+                        <p class="mb-20 text-lg font-light text-white sm:text-2xl xl:leading-normal">Meet
+                            People.&nbsp;&nbsp;Discover Music.&nbsp;&nbsp;Share Music.<br>Find people with your music
+                            taste near you.<br> Chat. Share. Vibe.</p>
+                        <a data-rellax-speed="1" data-rellax-xs-speed="0" data-rellax-mobile-speed="0" href="#services"
+                            class="rellax relative inline-block py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10">
+                            <span class="relative">See what we offer</span>
+                        </a>
+                    </div>
+                </div>
+                <div data-rellax-speed="-5" data-rellax-xs-speed="0" data-rellax-mobile-speed="0"
+                    class="rellax relative mt-16 ml-auto w-max md:mt-32 md:ml-0 xl:-mt-16">
+                    <span class="text-xs font-light uppercase tracking-widest text-white">Follow us</span>
+                    <ul class="relative z-20 mt-4 space-y-2 text-sm font-light text-white">
+                        <li>
+                            <a href="https://www.instagram.com/radiantpvt" target="_blank">001 ------ Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">002 ------ Behance</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">003 ------ Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="services" class="relative bg-black pb-20 pt-32 md:pb-0 lg:pb-0 xl:pt-96">
+            <div class="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
+                <div class="flex flex-wrap items-center gap-6">
+                    <h2 class="text-7xl font-bold text-white xl:text-8xl">Our services</h2>
+                    <span
+                        class="h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white">03
+                        services</span>
+                </div>
+                <div class="mt-24">
+                    <div class="">
+                        <div class="grid gap-12 sm:grid-cols-2 xl:grid-cols-3">
+                            <div>
+                                <div class="group border-b border-white/30 pb-8">
+                                    <div class="flex flex-col gap-4 divide-y divide-white/30">
+                                        <span class="inline-block text-white/60">001</span>
+                                        <h3 class="bg-black pt-6 text-3xl text-white">Meet.</h3>
+                                    </div>
+                                    <div class="mt-0 overflow-hidden transition-all duration-500 group-hover:mt-8">
+                                        <p
+                                            class="max-h-0 font-light text-white/70 transition-all duration-500 group-hover:max-h-24 md:text-xl">
+                                            Meet people of your school and college and share chats, memories and
+                                            messages with them.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="group border-b border-white/30 pb-8">
+                                    <div class="flex flex-col gap-4 divide-y divide-white/30">
+                                        <span class="inline-block text-white/60">002</span>
+                                        <h3 class="bg-black pt-6 text-3xl text-white">Discover.</h3>
+                                    </div>
+                                    <div class="mt-0 overflow-hidden transition-all duration-500 group-hover:mt-8">
+                                        <p
+                                            class="max-h-0 font-light text-white/70 transition-all duration-500 group-hover:max-h-24 md:text-xl">
+                                            Meet and get matched with people of your community, school and college with
+                                            the same music taste.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="group border-b border-white/30 pb-8">
+                                    <div class="flex flex-col gap-4 divide-y divide-white/30">
+                                        <span class="inline-block text-white/60">003</span>
+                                        <h3 class="bg-black pt-6 text-3xl text-white">Share</h3>
+                                    </div>
+                                    <div class="mt-0 overflow-hidden transition-all duration-500 group-hover:mt-8">
+                                        <p
+                                            class="max-h-0 font-light text-white/70 transition-all duration-500 group-hover:max-h-24 md:text-xl">
+                                            Share and exchange chats, stories, songs, playlists and much more in
+                                            personalized group chats and communities.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="relative z-10 bg-black pb-20 pt-32 md:pb-0 md:pt-0 lg:pb-0">
+            <div class="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
+                <div data-rellax-speed="-0.4" data-rellax-xs-speed="0" data-rellax-mobile-speed="0"
+                    class="rellax flex flex-wrap items-center gap-6">
+                    <h2 class="text-7xl font-bold text-white xl:text-8xl">About us</h2>
+                    <span
+                        class="h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white">09
+                        June, 2024</span>
+                </div>
+                <div class="mt-24 md:mt-72">
+                    <div class="grid gap-6">
+                        <div class="grid md:grid-cols-3">
+                            <div class="overflow-hidden md:col-span-2">
+                                <img src="/images/work.gif" alt="unnamed duo photo" width="1500" height="1000" />
+                            </div>
+                        </div>
+                        <div data-rellax-speed="1" data-rellax-xs-speed="0" data-rellax-mobile-speed="0"
+                            data-rellax-tablet-speed="0.5" class="rellax ml-auto md:w-3/5 lg:w-2/5">
+                            <p class="mt-12 text-2xl font-light text-white">At Radiant we strive to improve connectivity
+                                between friends and make social connecting positivity. I personally as the founder,
+                                always had love for a specific type of music but I was never able to find any one who
+                                actually enjoyed it and hence decided to build RADIANT.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact"
+            class="relative z-10 bg-gradient-to-b from-black via-black/80 to-black pt-32 backdrop-blur-3xl lg:pb-32 lg:pt-0">
+            <div class="mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
+                <div class="flex flex-wrap items-center gap-6">
+                    <h2 class="text-7xl font-bold text-white xl:text-8xl">Want to work together ?</h2>
+                    <span
+                        class="h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white">__</span>
+                </div>
+                <div class="mt-24">
+                    <div class="grid gap-6 border-t border-white/30 pt-24 lg:grid-cols-3 lg:gap-24">
+                        <div class="lg:col-span-2">
+                            <form id='contactForm' action="" class="mx-auto space-y-8 md:w-3/4">
+                                <div class="grid gap-8 sm:grid-cols-2 sm:gap-4">
+                                    <div>
+                                        <label for="firstname" class="tracking-wide text-white">First name</label>
+                                        <input type="text" id="fname" name="fistname" autocomplete="name"
+                                            placeholder="Your fistname"
+                                            class="mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary" />
+                                    </div>
+                                    <div>
+                                        <label for="lastname" class="tracking-wide text-white">Last name</label>
+                                        <input type="text" id="lname" name="lastname" autocomplete="family-name"
+                                            placeholder="Your last name"
+                                            class="mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="email" class="tracking-wide text-white">Mail address</label>
+                                    <input type="email" id="email" name="email" placeholder="Your mail address"
+                                        class="mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary" />
+                                </div>
+                                <div>
+                                    <label for="message" class="tracking-wide text-white">Your message</label>
+                                    <textarea name="message" id="message" cols="30" rows="6" placeholder="Your message"
+                                        class="mt-3 w-full border border-white/20 bg-transparent px-4 py-3 text-white/70 outline-none focus:ring-1 focus:ring-primary"></textarea>
+                                </div>
+                                <button onclick='Reset()'type="submit"
+                                    class="group ml-auto flex h-12 w-auto items-center overflow-hidden bg-white px-5 transition-all duration-300 hover:bg-primary">
+                                    <span class="relative uppercase tracking-wide text-black group-hover:text-white">
+                                        Send message </span>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="mt-8 border border-white/30 p-8 sm:p-12">
+                            <div>
+                                <h3 class="text-xs font-light uppercase tracking-widest text-white">Address</h3>
+                                <p class="mt-4 text-white">SAJS, Vasundhara[201012], UP, India</p>
+                            </div>
+                            <div class="mt-16">
+                                <h3 class="text-xs font-light uppercase tracking-widest text-white">Contact Info</h3>
+                                <ul class="relative z-20 mt-4 space-y-2 font-light text-white">
+                                    <li>
+                                        <a href="tel:+243000000000">Phone ------ +91 88263 37047</a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:sushensirohi0.radiant@gmail.com">E-mail ------- sushensirohi0.radiant@gmail.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-16">
+                                <h3 class="text-xs font-light uppercase tracking-widest text-white">Follow us</h3>
+                                <ul class="relative z-20 mt-4 space-y-2 font-light text-white">
+                                    <li>
+                                        <a href="https://instagram.com/radiantpvt" target="_blank">001 ------ Instagram</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">002 ------ Behance</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">003 ------ Twitter</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="relative bg-black pt-32 backdrop-opacity-0">
+        <div class="mx-auto max-w-7xl px-6 pb-12 lg:px-12 xl:px-6 2xl:px-0">
+            <div>
+                <div class="flex flex-wrap items-center gap-6">
+                    <h2 class="text-3xl text-white xl:text-6xl">Instagram</h2>
+                    <a href="https://instagram.com/radiantpvt" target="_blank"
+                        class="h-max rounded-full border border-white/40 px-2 py-1 text-xs tracking-wider text-white">@radiantpvt</a>
+                </div>
+                </div>
+            </div>
+            <div class="mt-12 md:mt-16 lg:mt-24">
+                <div class="space-y-8 md:space-y-12">
+                    <a href="/" class="text-2xl font-light tracking-widest text-white">
+                        <img class="h-8 w-auto brightness-200" src="/images/radiant.png" alt="logo mark" width="100"
+                            height="100" />
+                    </a>
+                    <nav>
+                        <ul class="flex flex-wrap gap-6 text-sm uppercase tracking-wider text-white">
+                            <li>
+                                <a href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="/login">Login</a>
+                            </li>
+                            <li>
+                                <a href="#services">Services</a>
+                            </li>
+                            <li>
+                                <a class="block w-max" href="#about">About us</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="flex flex-wrap justify-between gap-3">
+                        <span class="text-sm text-white/50">&copy; Radiant 2023 - Present</span>
+                        <span class="text-sm text-white/50">Developed by <a href="https://www.linkedin.com/in/sushensirohi/"
+                                class="text-white">Radiant</a> in Delhi NCR </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script type="module">
+        function Reset() {
+            alert('We are currently undergoing a big technological stack change and the contact form might break, refer to our instagram incase it doesnt work. Regards, Team Radiant')
+        }
+        import {
+            initializeApp
+        } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import {
+            getAnalytics
+        } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyCs0-T4tskyMCkrggTjVtlg6mMSJGMItCs",
+            authDomain: "contactformradiant.firebaseapp.com",
+            projectId: "contactformradiant",
+            storageBucket: "contactformradiant.appspot.com",
+            messagingSenderId: "618554361513",
+            databaseUrl: "https://contactformradiant-default-rtdb.asia-southeast1.firebasedatabase.app/",
+            appId: "1:618554361513:web:4889ddd00bc5ad26f7cbb8",
+            measurementId: "G-K4MBM6RRQG"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        
+        import { getDatabase, ref, set, child, get }
+             from "https://www.gstatic.com/firebasejs/10.3.0/firebase-database.js";
+        
+          const db = getDatabase();
+
+        document.getElementById('contactForm')
+            .addEventListener('submit', submitForm);
+
+        function submitForm(e) {
+            e.preventDefault();
+
+            // Get values
+            var fname = getInputVal('fname');
+            var lname = getInputVal('lname');
+            var email = getInputVal('email');
+            var message = getInputVal("message");
+
+            saveMessage(fname, lname, email, message);
+            document.getElementById('contactForm').reset();
+        }
+
+        // Function to get form values
+        function getInputVal(id) {
+            return document.getElementById(id).value;
+        }
+
+        // Save message to firebase
+        function saveMessage(fname, lname, email, message) {
+            
+    const dbRef = ref(db);
+
+    get(child(dbRef, "UsersList/" + username.value)).then((snapshot) => {
+        if (snapshot.exists()) {
+            alert("Account Already Exists!");
+        } else {
+            set(ref(db, "UsersList/" + username.value), {
+                fname: fname.value,
+                lname: lname.value,
+                email: email.value,
+                message: message.value // Store the plain text password directly
+            }).then(() => {
+                alert("User added successfully");
+            }).catch((error) => {
+                alert("Error: " + error);
+            });
+        }
+    });
+}
+    </script>
+</body>
+
+</html>
